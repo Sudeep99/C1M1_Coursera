@@ -1,26 +1,24 @@
-/******************************************************************************
- * Copyright (C) 2017 by Alex Fosdick - University of Colorado
- *
- * Redistribution, modification or use of this software in source or binary
- * forms is permitted as long as the files maintain this copyright. Users are 
- * permitted to modify this and use it to learn about the field of embedded
- * software. Alex Fosdick and the University of Colorado are not liable for any
- * misuse of this material. 
- *
- *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * File: stats.c 
+ * brief: To sort and perform some basic statistical analytics on a dataset.
  *
- * <Add Extended Description Here>
+ * Description:
+ * This is a simple C program which performs basic statistical analysis on
+ * an unsigened int array. It performs the following functions:
+ *  -Sorting a given array.
+ *  -Returning the Median of the given array. 
+ *  -Returning the Mean of the given array.
+ *  -Returning the element with the highest value in the given array.
+ *  -Returning the element with the lowest value in the given array.
+ *  -Priniting the given array.
+ *  -Printing the above mentioned statistical results.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * author: Sudeep Kumar
+ * date: 14/04/2020
+ *
+ * Note: For function descriptions refer the "stats.h" file.
  *
  */
-
-
-
 #include <stdio.h>
 #include "stats.h"
 
@@ -28,16 +26,56 @@
 #define SIZE (40)
 
 void main() {
-
-  unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
+/*Initializing an unsigned int array and giving it 40 values*/ 
+  unsigned char a[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
                               114, 88,   45,  76, 123,  87,  25,  23,
                               200, 122, 150, 90,   92,  87, 177, 244,
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
+  unsigned int arr[SIZE];//Initializing an unsigned integer array
+  for(int i=0;i<SIZE;i++)
+  {
+    arr[i]=a[i];//converting the unsigned char array to unsigned int array
+  }
+  print_statistics(arr);
+  print_array(arr,SIZE);
+  printf("\n");
+}
 
-  /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
+void print_statistics(int arr[])
+{
 
 }
 
-/* Add other Implementation File Code Here */
+void print_array(int arr[],int length)
+{
+
+}
+
+float find_median(int arr[],int length)
+{
+
+}
+
+float find_mean(int arr[],int length)
+{
+
+}
+
+int find_maximum(int arr[],int length)
+{
+
+}
+
+int find_minimum(int arr[],int length)
+{
+
+}
+
+void sort_array(int arr[],int length)
+{
+
+}
+
+
+
