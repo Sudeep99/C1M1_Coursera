@@ -38,8 +38,13 @@ void main() {
   {
     arr[i]=a[i];//converting the unsigned char array to unsigned int array
   }
-  print_statistics(arr);
+  printf("\n The given array: ");
   print_array(arr,SIZE);
+  sort_array(arr,SIZE);
+  printf("\n The sorted array: ");
+  print_array(arr,SIZE);
+  printf("\n The Statistics: \n");
+  print_statistics(arr);
   printf("\n");
 }
 
@@ -60,12 +65,12 @@ void print_statistics(int arr[])
 
 void print_array(int arr[],int length)
 {
-  printf("\nThe Given array: \nIndex  Value\n");
+  printf("\n[  ");
   for(int i=0;i<length;i++)
   {
-    printf(" [%d] , %d \n",i,arr[i]);// Printing with index and value
+    printf("%d  ",arr[i]);// Printing with index and value
   }
-  
+  printf("  ]");
 }
 
 float find_median(int arr[],int length)
@@ -74,7 +79,7 @@ float find_median(int arr[],int length)
   float median;
   if(length%2==0)
   {
-    median=(arr[(length-1)/2]+arr[length/2])/2.0;//median for an array with even number of elements.
+    median=(arr[(length-1)/2]+arr[length/2])/2;//median for an array with even number of elements.
   }
   else
   {
