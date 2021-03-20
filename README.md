@@ -1,6 +1,6 @@
 ## Author: Sudeep Kumar
 ## Date:14/04/2020
-## Project Details:
+### Project Details:
  This is a simple C program which performs basic statistical analysis on an unsigened int array.\
  It performs the following functions:\
   -Sorting a given array.\
