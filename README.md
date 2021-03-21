@@ -11,3 +11,5 @@
   -Priniting the given array.\
   -Printing the above mentioned statistical results.\
 ### Note: For function descriptions refer the "stats.h" file.\
+### LICENSE
+<img src=https://img.shields.io/badge/license-GPL--3.0-green.svg>
